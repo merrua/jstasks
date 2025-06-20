@@ -11,7 +11,7 @@
 // if its length and width are equal, otherwise it is a rectangle.
 
 const areaOrPerimeter = function (l, w) {
-  return = l === w ? l * w : l * 2 + w * 2;
+  return l === w ? l * w : l * 2 + w * 2;
 };
 
 console.log(areaOrPerimeter(3, 3));

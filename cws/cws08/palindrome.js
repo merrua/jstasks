@@ -9,7 +9,10 @@
 
 function isPalindrome(x) {
   // your code here
-  return x === x.split().reverse().join() ? true : false;
+  return x.toLowerCase() === x.split("").reverse().join("").toLowerCase()
+    ? true
+    : false;
 }
 
-console.log(isPalindrome("madam"));
+// console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));

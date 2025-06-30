@@ -6,13 +6,6 @@
 //     If both characters are the same case, return 1
 //     If both characters are letters, but not the same case, return 0
 
-// Examples
-// 'a' and 'g' returns 1
-// 'A' and 'C' returns 1
-// 'b' and 'G' returns 0
-// 'B' and 'g' returns 0
-// '0' and '?' returns -1
-
 function sameCase(a, b) {
   if (!isLetter(a) || !isLetter(b)) {
     return -1;
@@ -37,9 +30,16 @@ function isUpperCase(str1) {
   return str1 === str1.toUpperCase() ? true : false;
 }
 
-console.log(sameCase("a", "b"));
-console.log(sameCase("A", "B"));
-console.log(sameCase("a", "B"));
-console.log(sameCase("A", "b"));
-console.log(sameCase("a", "0"));
-console.log(sameCase("&", "0"));
+console.log(sameCase("a", "b")); //1
+console.log(sameCase("A", "B")); //1
+console.log(sameCase("a", "B")); //0
+console.log(sameCase("A", "b")); //0
+console.log(sameCase("a", "0")); //-1
+console.log(sameCase("&", "0")); //-1
+
+// Examples
+// 'a' and 'g' returns 1
+// 'A' and 'C' returns 1
+// 'b' and 'G' returns 0
+// 'B' and 'g' returns 0
+// '0' and '?' returns -1

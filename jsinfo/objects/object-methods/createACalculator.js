@@ -7,9 +7,27 @@
 // and returns the result.
 
 let calculator = {
-  // ... your code ...
+  a: 0,
+  b: 0,
+
+  read() {
+    this.a = prompt("Enter the first value. ");
+    this.b = prompt("Enter the second value. ");
+  },
+
+  sum() {
+    return Number(this.a) + Number(this.b);
+  },
+
+  mul() {
+    return Number(this.a) * Number(this.b);
+  },
 };
+// calculator.read = function(){
+//   calculator.a = prompt("Enter the first value. ");
+//   calculator.b = prompt("Enter the second value. ");
+// }
 
 calculator.read();
-alert(calculator.sum());
-alert(calculator.mul());
+alert(`Sum:  ${calculator.sum()}`);
+alert(`Multi: ${calculator.mul()}`);

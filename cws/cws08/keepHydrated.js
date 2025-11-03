@@ -4,7 +4,8 @@
 // the person will drink, rounded down.
 
 function litres(time) {
-  return Math.round(0.5 * time);
+  let result = 0.5 * Math.floor(time);
+  return Math.floor(result);
 }
 
 console.log(litres(1));

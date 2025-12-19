@@ -7,6 +7,7 @@
 //     the array will contain valid indices.
 
 function scramble(str, arr) {
+  let result = [];
   arr.map((el, i) => {
     result[el] = str[i];
   });

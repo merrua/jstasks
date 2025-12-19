@@ -8,10 +8,7 @@
 
 function scramble(str, arr) {
   arr.map((el, i) => {
-    console.log(`el: ${el}`);
-    console.log(`i: ${i}`);
     result[el] = str[i];
-    console.log(`result[el]: ${result[el]}`);
   });
   return result.join().replaceAll(",", "");
 }
